@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Pasapalabra<sup> 2</sup></h1>
+    <div class="container">
+      <div class="letters" style="--m: 27; --tan: 0.41">
+        <div class="letterContainer" id="containerA" style="--i: 1">A</div>
+        <div class="letterContainer" id="containerB" style="--i: 2">B</div>
+        <div class="letterContainer" id="containerC" style="--i: 3">C</div>
+        <div class="letterContainer" id="containerD" style="--i: 4">D</div>
+        <div class="letterContainer" id="containerE" style="--i: 5">E</div>
+        <div class="letterContainer" id="containerF" style="--i: 6">F</div>
+        <div class="letterContainer" id="containerG" style="--i: 7">G</div>
+        <div class="letterContainer" id="containerH" style="--i: 8">H</div>
+        <div class="letterContainer" id="containerI" style="--i: 9">I</div>
+        <div class="letterContainer" id="containerJ" style="--i: 10">J</div>
+        <div class="letterContainer" id="containerK" style="--i: 11">K</div>
+        <div class="letterContainer" id="containerL" style="--i: 12">L</div>
+        <div class="letterContainer" id="containerM" style="--i: 13">M</div>
+        <div class="letterContainer" id="containerN" style="--i: 14">N</div>
+        <div class="letterContainer" id="containerÑ" style="--i: 15">Ñ</div>
+        <div class="letterContainer" id="containerO" style="--i: 16">O</div>
+        <div class="letterContainer" id="containerP" style="--i: 17">P</div>
+        <div class="letterContainer" id="containerQ" style="--i: 18">Q</div>
+        <div class="letterContainer" id="containerR" style="--i: 19">R</div>
+        <div class="letterContainer" id="containerS" style="--i: 20">S</div>
+        <div class="letterContainer" id="containerT" style="--i: 21">T</div>
+        <div class="letterContainer" id="containerU" style="--i: 22">U</div>
+        <div class="letterContainer" id="containerV" style="--i: 23">V</div>
+        <div class="letterContainer" id="containerW" style="--i: 24">W</div>
+        <div class="letterContainer" id="containerX" style="--i: 25">X</div>
+        <div class="letterContainer" id="containerY" style="--i: 26">Y</div>
+        <div class="letterContainer" id="containerZ" style="--i: 27">Z</div>
+      </div>
+      <div class="textAndControls">
+        <div class="mainText">
+          <p>
+            Bienvenido a Pasapalabra <sup>2</sup
+            ><del
+              >, ya que todo es cuadrado porque no sé colocar las letras en un
+              círculo. </del
+            ><br /><br />Las reglas son sencillas, responde correctamente a las
+            preguntas que apareceran con la palabra correcta antes de que se
+            acabe el tiempo. <br /><br />El programa es sensible a la
+            puntuación, por lo que escribe las palabras sin acentos, por favor.
+            <br /><br />Recuerda que si puedes decir "pasapalabra" o dejar el
+            resultado el blanco para ir a la siguiente pregunta o "end" para
+            rendirte. ¿Estás list@?
+          </p>
+        </div>
+        <input
+          type="text"
+          name=""
+          id="textInput"
+          placeholder="Introduce tu nombre"
+        />
+        <button id="startTimerButton">Que empiece el juego!</button>
+      </div>
+    </div>
+
+    <h2 id="pointsDisplay">0</h2>
+    <h2 id="secondsDisplay">150</h2>
+
+    <script src="index.js"></script>
+  </body>
+</html>

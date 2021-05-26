@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Mi CSS */
+body {
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  background-color: #14213d;
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.letters {
+  --d: 40px; /* image size */
+  --rel: 3; /* how much extra space we want between images, 1 = one image size */
+  --r: calc(0.5 * (1 + var(--rel)) * var(--d) / var(--tan)); /* circle radius */
+  --s: calc(2 * var(--r) + var(--d)); /* container size */
+  position: relative;
+  width: var(--s);
+  height: var(--s);
+  padding: 0;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.letters div {
+  position: absolute;
+  background: whitesmoke;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  margin: calc(-0.5 * var(--d));
+  width: var(--d);
+  height: var(--d);
+  --az: calc(var(--i) * 1turn / var(--m));
+  transform: rotate(var(--az)) translate(var(--r)) rotate(calc(-1 * var(--az)));
+}
+
+.container {
+  display: flex;
+}
+
+.textAndControls {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #e5e5e5;
+  border-radius: 5%;
+  margin-left: 20px;
+}
+
+.mainText,
+#textInput {
+  margin-bottom: 5%;
+}
+
+input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px solid black;
+  background-color: whitesmoke;
+}
+
+#pointsDisplay,
+#secondsDisplay {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  background-color: whitesmoke;
+  margin: 1%;
+  color: black;
+}
+
+button {
+  width: 50%;
+  background-color: #fca311;
+  color: whitesmoke;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5%;
+  padding: 2%;
+}
+
+button:hover {
+  background-color: #bd7a0f;
+}
+
+.success {
+  background-color: greenyellow !important;
+}
+.error {
+  background-color: firebrick !important;
+}
+.pending {
+  background-color: gold !important;
+}
+.selected {
+  background-color: aquamarine !important;
+}
